@@ -1,29 +1,4 @@
-body {
-    margin: 0;
-}
-    
-.site {
-    max-width: 50em;
-    margin: 0 auto;
-}
 
-body {
-    max-width: 1366px;
-    margin: auto;
-    position: relative;
-    min-height: 100vh;
-    font-optical-sizing: auto;
-    background-color: #e4e3e3;
-}
-
-.container {
-    width: 90%;
-    margin: auto;
-    padding-bottom: 4.5em;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-evenly;
-}
 
 h2 {
     text-align: center;
