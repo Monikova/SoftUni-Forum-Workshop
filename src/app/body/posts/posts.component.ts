@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../../api.service';
 import { Post } from '../../types/post';
 
@@ -10,10 +10,10 @@ import { Post } from '../../types/post';
   templateUrl: './posts.component.html',
   styleUrl: './posts.component.css'
 })
-export class PostsComponent {
+export class PostsComponent implements OnInit {
   posts: Post[] = [];
 
-  constructor(private apiService: ApiService) {}
+  constructor(private apiService: ApiService){}
 
   ngOnInit(): void {
     this.apiService.getPosts(5).subscribe((posts) => {
