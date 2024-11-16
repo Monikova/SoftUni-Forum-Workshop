@@ -12,10 +12,11 @@ import { Post } from '../../types/post';
 })
 export class PostsComponent {
   posts: Post[] = [];
+
   constructor(private apiService: ApiService) {}
 
   ngOnInit(): void {
-    this.apiService.getPosts().subscribe((posts) => {
+    this.apiService.getPosts(5).subscribe((posts) => {
       this.posts = posts;
     })
   }
