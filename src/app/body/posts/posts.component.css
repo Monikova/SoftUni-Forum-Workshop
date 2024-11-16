@@ -15,11 +15,13 @@ aside {
     border: 1px solid #999;
     border-radius: 0.3em;
     padding: 0.3em 0.5em;
+    background-color: #e4e3e3;
 }
 
 .title {
     font-size: 1.5em;
-    border-bottom: none;
+    color: #234465;
+    /* border-bottom: none; */
 }
 
 .aside .aside-theme {
@@ -28,12 +30,12 @@ aside {
 }
 
 .aside h3 {
-    border-bottom: none;
-    border-radius: 0.3rem;
+    /* border-bottom: none; */
+    /* border-radius: 0.3rem; */
     font-size: 1.2rem;
     background-color:#306085;
-    padding-left: 0.5rem;
     color: white;
+    padding-left: 0.5rem;
     text-shadow: 1px 1px rgb(43, 42, 42);
 }
 
