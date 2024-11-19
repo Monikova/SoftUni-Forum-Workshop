@@ -1,8 +1,16 @@
 import { Routes } from '@angular/router';
 import { ErrorPageComponent } from './error-page/error-page.component';
 import { BodyComponent } from './body/body.component';
+import { LoginComponent } from './user/login/login.component';
+import { RegisterComponent } from './user/register/register.component';
 
 export const routes: Routes = [
-    {path: "", component: BodyComponent},
-    {path: "**", component: ErrorPageComponent},
+    {path: "", redirectTo: "/home", pathMatch: 'full'},
+    {path: "home", component: BodyComponent},
+
+    {path: "login", component: LoginComponent},
+    {path: "register", component: RegisterComponent},
+
+    {path: "404", component: ErrorPageComponent},
+    {path: "**", redirectTo: "/404", pathMatch: 'full'},
 ];
